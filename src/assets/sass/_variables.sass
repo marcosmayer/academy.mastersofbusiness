@@ -1,0 +1,97 @@
+// Mixins
+
+@mixin dflex($flexjc: center, $flexai: center, $flexd: row)
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+	-webkit-justify-content: $flexjc
+	justify-content: $flexjc
+	align-items: $flexai
+	-webkit-flex-direction: $flexd
+	-ms-flex-direction: $flexd
+	flex-direction: $flexd
+
+@mixin xxl
+	@media only screen and (min-width : 1536px)
+		@content
+
+@mixin xl
+	@media only screen and (max-width : 1440px)
+		@content
+
+@mixin l
+	@media only screen and (max-width : 1200px)
+		@content
+
+@mixin m
+	@media only screen and (max-width : 960px)
+		@content
+
+@mixin s
+	@media only screen and (max-width : 720px)
+		@content
+
+@mixin xs
+	@media only screen and (max-width : 480px)
+		@content
+
+// Variables
+
+$text-font: 'Titillium Web', sans-serif !default
+
+$title-font: 'npregular', sans-serif !default
+
+$dialog: 'Comic Neue', cursive
+
+$text-color: #cecbc3 !default
+
+$gold: rgb(164, 152, 122) !default
+
+$light-gold: rgb(255, 242, 226) !default
+
+$dark-gold: rgb(104, 94, 69) !default
+
+$darker-gold: rgb(39, 36, 28) !default
+
+$light-grey: rgb(237, 237, 237) !default
+
+$mid-grey: rgb(153, 153, 153) !default
+
+$dark-grey: rgb(68, 68, 68) !default
+
+// Basic
+
+html
+	box-sizing: border-box
+
+html,
+body
+	height: 100%
+
+body
+	color: $text-color
+	font: normal 125% / 1.4 $text-font
+
+*,
+*::before,
+*::after
+	box-sizing: inherit
+
+a
+	color: $gold
+	text-decoration: none
+
+	:hover
+		color: $text-color
+		text-decoration: underline
+
+.txtGold
+	color: $gold
+
+.txtDarkGold
+	color: $gold
+
+.txtLightGold
+	color: $light-gold

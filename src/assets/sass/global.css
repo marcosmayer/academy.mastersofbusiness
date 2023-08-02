@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: #cecbc3;
+  font: normal 125%/1.4 "Titillium Web", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: rgb(164, 152, 122);
+  text-decoration: none;
+}
+a :hover {
+  color: #cecbc3;
+  text-decoration: underline;
+}
+
+.txtGold {
+  color: rgb(164, 152, 122);
+}
+
+.txtDarkGold {
+  color: rgb(164, 152, 122);
+}
+
+.txtLightGold {
+  color: rgb(255, 242, 226);
+}
+
+@font-face {
+  font-family: "npheavy";
+  src: url("../fonts/neuepower-heavy.woff2") format("woff2"), url("../fonts/neuepower-heavy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "npregular";
+  src: url("../fonts/neuepower-regular.woff2") format("woff2"), url("../fonts/neuepower-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
